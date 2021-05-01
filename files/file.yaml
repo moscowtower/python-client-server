@@ -1,0 +1,16 @@
+key1:
+- 0kek
+- 1kek
+- 2kek
+- 3kek
+- 4kek
+- 5kek
+- 6kek
+- 7kek
+- 8kek
+- 9kek
+key2: 123456
+key3:
+  $: dollar
+  €: euro
+  ₽: ruble
