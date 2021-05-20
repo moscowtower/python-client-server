@@ -3,8 +3,9 @@ import time
 from jim import *
 from options import *
 from log.client_log_config import client_logger
+from log.log_decorator import Log
 
-
+@Log('DEBUG')
 def create_presence_msg(user_name, status):
     ts = time.time()
     presence_msg = {

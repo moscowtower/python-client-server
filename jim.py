@@ -1,12 +1,13 @@
 import json
+from log.log_decorator import Log
 
-
+@Log('DEBUG')
 def pack(response_dict):
     """produces message to send via tcp"""
     str_msg = json.dumps(response_dict)
     return str_msg.encode("utf-8")
 
-
+@Log('DEBUG')
 def unpack(byte_str):
     """unpacks received message"""
     str_decoded = byte_str.decode('utf-8')
